@@ -41,7 +41,6 @@ var camera, scene, renderer;
  function animate() {
  
  	requestAnimationFrame(animate);
- 
  	mesh.rotation.x += 0.005;
  	mesh.rotation.y += 0.01;
   renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0)); 
