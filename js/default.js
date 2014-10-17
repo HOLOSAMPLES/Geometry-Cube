@@ -28,7 +28,7 @@ var camera, scene, renderer;
  
  	var geometry = new THREE.BoxGeometry(200, 200, 200);
  	THREE.ImageUtils.crossOrigin = "anonymous";
- 	var texture = THREE.ImageUtils.loadTexture('https://holodevuserresource.s3.amazonaws.com/crate.gif');
+ 	var texture = THREE.ImageUtils.loadTexture('resource/crate.gif');
  	texture.anisotropy = renderer.getMaxAnisotropy();
  
  	var material = new THREE.MeshBasicMaterial({ map: texture });
