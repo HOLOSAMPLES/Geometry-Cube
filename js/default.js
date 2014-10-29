@@ -11,6 +11,7 @@ var camera, scene, renderer;
  
  	renderer = new LeiaWebGLRenderer({
  		antialias: true,
+		shaderMode:_nShaderMode,
  		renderMode: _renderMode,
  		devicePixelRatio: 1
  	});//1 
