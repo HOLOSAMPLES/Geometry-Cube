@@ -8,15 +8,16 @@
       <title>holodev</title>
       <script>  
            var _renderMode = 2; 
-           var _camPanelVisible = false;  
-           var _gyroPanelVisible = false;  
-   		var _camFov = 50; 
-        </script>  
-        <style type="text/css">
+           var _camPosition = new THREE.Vector3(0, 0, 500);
+           var _tarPosition = new THREE.Vector3(0, 0, 0);
+           var _holoScreenScale = 1.0;
+		   var _camFov = 50; 
+        </script>
+	    <style type="text/css">
           body {
               overflow:hidden;
           }
-         </style>
+        </style>
    </head>
     
     <body>
