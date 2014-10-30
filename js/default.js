@@ -42,6 +42,6 @@ var camera, scene, renderer;
  	mesh.rotation.x += 0.005;
  	mesh.rotation.y += 0.01;
   renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0)); 
-	renderer.Leia_render(scene, camera,undefined,undefined,_holoScreenScale,_camFov);
+	renderer.Leia_render(scene, camera,undefined,undefined,_holoScreenScale,_camFov,_messageFlag);
  
  }
