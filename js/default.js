@@ -9,6 +9,8 @@ var camera, scene, renderer;
 
  function init() {
  
+    scene = new THREE.Scene();
+   
  	renderer = new LeiaWebGLRenderer({
  		antialias: true,
 		shaderMode:_nShaderMode,
@@ -22,8 +24,8 @@ var camera, scene, renderer;
  	camera = new LeiaCamera();
     camera.position.copy(_camPosition);
     camera.lookAt(_tarPosition);
- 
- 	scene = new THREE.Scene();
+    scene.add(camera);
+ 	
  
  	var geometry = new THREE.BoxGeometry(200, 200, 200);
  	var texture = THREE.ImageUtils.loadTexture('resource/crate.gif');
